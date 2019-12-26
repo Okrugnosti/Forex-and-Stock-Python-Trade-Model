@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbb36334-287d-4212-af58-437efa43f676" name="Default Changelist" comment="" />
+    <list default="true" id="bbb36334-287d-4212-af58-437efa43f676" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/2_features/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_data/1_make_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/1_make_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_data/2_trade_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/2_trade_system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/1_data/4_report_trading_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/4_report_trading_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/2_features/1_volatility_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/2_features/1_volatility_model.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,32 +67,109 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="2" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.4" value="3" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="158" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="158" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/1_data/1_make_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="567">
+              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/1_data/2_trade_system.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="363" lean-forward="true" selection-start-line="363" selection-end-line="363" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/1_data/4_report_trading_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <marker date="1577378312424" expanded="true" signature="1451:1452" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/1_data/data_preprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="73" column="41" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/2_features/1_volatility_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/2_features/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="48" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -120,19 +205,21 @@
         <option value="$PROJECT_DIR$/references/vizualization" />
         <option value="$PROJECT_DIR$/references/TensorFlow" />
         <option value="$PROJECT_DIR$/src/1_data/Модель прогноза цены.py" />
-        <option value="$PROJECT_DIR$/src/1_data/2_trade_system.py" />
         <option value="$PROJECT_DIR$/src/1_data/data_export_finam.py" />
+        <option value="$PROJECT_DIR$/src/1_data/data_preprocessing.py" />
+        <option value="$PROJECT_DIR$/src/2_features/test.py" />
+        <option value="$PROJECT_DIR$/src/1_data/1_make_dataset.py" />
+        <option value="$PROJECT_DIR$/src/1_data/2_trade_system.py" />
         <option value="$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py" />
         <option value="$PROJECT_DIR$/src/1_data/4_report_trading_model.py" />
-        <option value="$PROJECT_DIR$/src/1_data/data_preprocessing.py" />
         <option value="$PROJECT_DIR$/src/2_features/1_volatility_model.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="83" />
-    <option name="width" value="1843" />
-    <option name="height" value="1057" />
+    <option name="x" value="203" />
+    <option name="width" value="1724" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -140,12 +227,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
               <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="interim" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
@@ -158,11 +257,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="1_data" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="2_features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="3_models" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,7 +388,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="data_export_finam" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Saint_Perersburg_Trading_Model_a" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,11 +396,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_data" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_features" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_data/data_export_finam.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_features/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,18 +411,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.4_report_trading_model" />
-      <item itemvalue="Python.data_export_finam" />
       <item itemvalue="Python.3_trading_model_retrospectiva" />
       <item itemvalue="Python.1_volatility_model" />
       <item itemvalue="Python.1_make_dataset" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.1_make_dataset" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.1_volatility_model" />
         <item itemvalue="Python.4_report_trading_model" />
         <item itemvalue="Python.3_trading_model_retrospectiva" />
-        <item itemvalue="Python.data_export_finam" />
       </list>
     </recent_temporary>
   </component>
@@ -331,11 +441,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info x="235" y="30" width="868" height="917" id="Debug" order="2" weight="0.3858407" />
-      <window_info id="Run" order="3" weight="0.30088496" />
+      <window_info id="Run" order="3" visible="true" weight="0.20884956" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="1" weight="0.32961586" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.18272841" />
@@ -348,7 +459,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.21120945" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.21356933" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -550,13 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/2_features/1_volatility_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/Saint_Perersburg_Trading_Model_a/Lib/site-packages/pandas/core/generic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="727">
@@ -564,21 +668,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_data/4_report_trading_model.py">
+    <entry file="file://$PROJECT_DIR$/src/2_features/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <marker date="1574789649762" expanded="true" signature="1451:1452" ph="..." />
-          </folding>
+        <state relative-caret-position="96">
+          <caret line="6" column="48" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_data/data_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="78" selection-start-line="73" selection-start-column="33" selection-end-line="78" />
+        <state relative-caret-position="647">
+          <caret line="73" column="41" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_data/1_make_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -587,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_data/2_trade_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="727">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        <state relative-caret-position="631">
+          <caret line="363" lean-forward="true" selection-start-line="363" selection-end-line="363" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -597,15 +707,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="400">
+          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_data/1_make_dataset.py">
+    <entry file="file://$PROJECT_DIR$/src/1_data/4_report_trading_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1577378312424" expanded="true" signature="1451:1452" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2_features/1_volatility_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

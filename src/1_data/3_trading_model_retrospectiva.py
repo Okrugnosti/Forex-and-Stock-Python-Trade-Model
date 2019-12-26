@@ -11,7 +11,7 @@ import scipy  # Выполнениt научных и инженерных ра�
 import data_preprocessing
 
 #считываем данные из подготовленного файле, устанавливаем дату в качестве индекса
-trade_cube = pd.read_csv('D://GitHub/Saint_Perersburg_Trading_Model_a/data/interim/2_Resalt_Trade_Model_1.txt', sep=',')
+trade_cube = pd.read_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/2_Resalt_Trade_Model_1.txt', sep=',')
 trade_cube = trade_cube.set_index('D')
 
 o1 = trade_cube['<Close_Position>'].replace(0, np.nan).fillna(method = 'bfill')
@@ -32,7 +32,7 @@ o3 = trade_cube.apply(lambda x:
 
 trade_cube['<Rezultat_Sdelki_Retrospektiva>'] = o3
 
-data_preprocessing.data_frame_write(trade_cube, 'D://GitHub/Saint_Perersburg_Trading_Model_a/data/interim/3_Train_Massiv_1.txt')
-trade_cube.to_excel('D://GitHub/Saint_Perersburg_Trading_Model_a/data/interim/3_Train_Massiv_1.xlsx', startrow=3, index=True)
+data_preprocessing.data_frame_write(trade_cube, 'D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/3_Train_Massiv_1.txt')
+trade_cube.to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/3_Train_Massiv_1.xlsx', startrow=3, index=True)
 
 print('File Write')

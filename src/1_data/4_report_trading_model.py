@@ -39,7 +39,7 @@ def raschet_Max_Drogdawn(x, Max_Risc):
 
 def report_trade_model(period_agrigacii, Max_Risc):
     #считываем данные из подготовленного файле, устанавливаем дату в качестве индекса
-    trade_cube = pd.read_csv('D://GitHub/Saint_Perersburg_Trading_Model_a/data/interim/2_Resalt_Trade_Model_1.txt', sep=',')
+    trade_cube = pd.read_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/2_Resalt_Trade_Model_1.txt', sep=',')
     trade_cube['D'] = pd.to_datetime(trade_cube['D'], format='%Y-%m-%d %H:%M:%S')
     trade_cube = trade_cube.set_index('D')
     print(trade_cube.info())
@@ -127,7 +127,7 @@ def report_trade_model(period_agrigacii, Max_Risc):
                                  ]]
 
     #вывод отчета в Excel
-    pivot_table2.to_excel('D://GitHub/Saint_Perersburg_Trading_Model_a/data/interim/4_Traiding_Repotr_1.xlsx', startrow=3, index=True)
+    pivot_table2.to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/4_Traiding_Repotr_1.xlsx', startrow=3, index=True)
     print('File Write')
 
     # смотрим данным на графике
