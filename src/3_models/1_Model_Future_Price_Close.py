@@ -32,7 +32,7 @@ dataset = pd.read_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/proces
 #2. Устанавливаем дату и время в качестве индекса
 dataset['D'] = pd.to_datetime(dataset['D'].astype(str), format='%d.%m.%Y %H:%M')
 dataset = dataset.set_index('D')
-print(dataset.info())
+#print('dataset: \n', dataset.info())
 
 #3. Препроцессинг исходных данных. Выделение Dammi переменных
 
@@ -119,7 +119,7 @@ frame = [dataset,
 
 
 dataset2 = pd.concat(frame, axis=1, sort=False)
-print(dataset2.info())
+#print('dataset2: \n', dataset2.info())
 
 #5. Удаляем не совместимые с ML столбцы
 
@@ -128,7 +128,9 @@ columns = ['Признак минуты', 'Признак часа', 'Призн
             'P_MV_5vs30', 'P_MV_5vs60', 'P_MV_15vs30',
             'P_MV_15vs60', 'P_MV_15vs90', 'P_MV_30vs60',
             'P_MV_30vs90', 'P_MV_30vs200', 'P_MV_60vs90',
-            'P_MV_60vs200', 'P_MV_90vs200', 'P_MV_5vs15 (IF)',
+            'P_MV_60vs200', 'P_MV_90vs200',
+            'Price_If_New_Max', 'Price_If_New_Min', 'VOL_If_New_Max', 'VOL_If_New_Min',
+            'P_MV_5vs15 (IF)',
             'P_MV_5vs30 (IF)', 'P_MV_5vs60 (IF)', 'P_MV_15vs30 (IF)',
             'P_MV_15vs60 (IF)', 'P_MV_15vs90 (IF)', 'P_MV_30vs60 (IF)',
             'P_MV_30vs90 (IF)', 'P_MV_30vs200 (IF)', 'P_MV_60vs90 (IF)',
@@ -136,29 +138,34 @@ columns = ['Признак минуты', 'Признак часа', 'Призн
             ]
 
 dataset3 = dataset2.drop(columns, 1)
-print(dataset3.info())
-
+print('dataset3: \n', dataset3.columns)
 
 #6. Разделяем файл на "Х-фичи" и "Y-прогноз", путем выбора столбцов
+
+s = 3
+k = 63
+
 Y = dataset3['<CLOSE>.1']
 X = dataset3.drop('<CLOSE>.1', 1)
-X = dataset3.iloc[:, 5:15]
+X = dataset3.iloc[:, s:k]
 
 #обрезаем выборку
 #Y = Y.iloc[50000:171155]
 #X = X.iloc[50000:171155]
 
-print('Выборка Х:\n ', X)
-print('Выборка Y:\n ', Y)
+#print('Выборка Х:\n ', X)
+#print('Выборка Y:\n ', Y)
 
 #7. Разбиваем на тестовую и проверочную выборку
 
 # загружем выборку и разбиваем не тестовую и боевыую
-X_train, X_test, Y_train, Y_test = sk.model_selection.train_test_split(X, Y, train_size = 0.25, random_state=0)
+X_train, X_test, Y_train, Y_test = sk.model_selection.train_test_split(X, Y, train_size = 0.5, random_state=0)
 
 #print(X_train.info())
 #print(Y_train.info())
 
+
+'''
 #График 3
 plt.plot(X_train, 'o', label="Y_train")
 plt.plot(X_test, 'v', label="Y_test")
@@ -166,30 +173,34 @@ plt.legend(ncol=2, loc=(0, 1.05))
 plt.ylabel("X_train")
 plt.xlabel("X_test")
 plt.show()
-
+'''
 
 #8. Запускаем ML-алгоритмы. Проводим обучение
 
 #Модель линейной регрессии
+'''
 lr = LinearRegression().fit(X_train, Y_train)
 print('\n', 'LinearRegressi')
 print("Правильность на обучающем наборе: {:.2f}".format(lr.score(X_train, Y_train)))
 print("Правильность на тестовом наборе: {:.2f}".format(lr.score(X_test, Y_test)))
+'''
 
 # L1 - регуляризация
-lasso = Lasso(alpha=0.01, max_iter=100000).fit(X_train, Y_train)
+lasso = Lasso(alpha=0.71, max_iter=100000).fit(X_train, Y_train)
 print('\n', 'lasso')
 print("Правильность на обучающем наборе: {:.2f}".format(lasso.score(X_train, Y_train)))
 print("Правильность на контрольном наборе: {:.2f}".format(lasso.score(X_test, Y_test)))
 print("Количество использованных признаков: {}".format(np.sum(lasso.coef_ != 0)))
 
+
+'''
 # L1 и L2 - регуляризация
 ElasticN = ElasticNet(alpha=0.01, random_state=0).fit(X_train, Y_train)
 print('\n', 'ElasticN')
 print("Правильность на обучающем наборе: {:.2f}".format(ElasticN.score(X_train, Y_train)))
 print("Правильность на контрольном наборе: {:.2f}".format(ElasticN.score(X_test, Y_test)))
 print("Количество использованных признаков: {}".format(np.sum(ElasticN.coef_ != 0)))
-
+'''
 
 
     #.score() принимает в качестве аргументов предсказатель x и регрессор y, и возвращает значение
@@ -197,25 +208,36 @@ print("Количество использованных признаков: {}"
     #.coef_- массив весов
     #.predict() - предсказание ответа
 
+
 #График 3
-plt.plot(lasso.coef_.T, '^', label="Линейная регрессия")
+fruits = X.columns
+counts = lasso.coef_
+plt.plot(fruits, counts, '^', label="Значимость признаков в ML")
+plt.xticks(rotation = 90)
+plt.legend()
 plt.show()
 
 print('lr.coef_: \n', lasso.coef_)
 
 #9. Запускаем прогноз на контрольной выборке
 
-dataset3['Line_Regression_Predict'] = lasso.predict(dataset3.iloc[:, 5:15]) #, 1) X) #[['a', 'b', 'c']])
-print('Line_Regression_Predict: \n', dataset3)
+dataset3['Line_Regression_Predict'] = lasso.predict(dataset3.iloc[:, s:k]) #, 1) X) #[['a', 'b', 'c']])
+#print('Line_Regression_Predict: \n', dataset3)
 
 dataset3['Delta_X_Y'] = dataset3['Line_Regression_Predict'] - dataset3['<CLOSE>']
 dataset3['Delta%_X_Y'] = dataset3['Delta_X_Y'] / dataset3['<CLOSE>'] * 100
+
+
+'''
+#График 2 - разница между фактом и прогнозом
+plt.plot(dataset3['Delta_X_Y'], 'o', label="Delta_X_Y")
+plt.show()
+'''
+
 print('Delta_X_Y: \n', dataset3['Delta_X_Y'])
 
-#График 2
-plt.plot(dataset3['Delta%_X_Y'], 'o', label="Delta%_X_Y")
-plt.show()
 
+'''
 #График 1
 plt.plot(dataset3[['<CLOSE>']], 'o', label="Факт")
 plt.plot(dataset3['Line_Regression_Predict'], 'v', label="Прогноз")
@@ -223,6 +245,8 @@ plt.legend(ncol=2, loc=(0, 1.05))
 plt.ylabel("Значение")
 plt.xlabel("Итерация")
 plt.show()
+'''
+
 
 #10. Выводим результаты модели в сводный файл. Объединяем результаты, сравниваем прогноз с фактом
 

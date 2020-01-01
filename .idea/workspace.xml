@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb36334-287d-4212-af58-437efa43f676" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/1_Features_3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/1_Features_3_Load.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/1_Features_3_Load.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/processed/1_Train_Features_Massiv_1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/3_models/LR_archive.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,10 +61,10 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="6" />
-          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.4" value="5" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -90,14 +85,14 @@
         <counts>
           <entry key="Reestr" value="68" />
           <entry key="dummy" value="47" />
-          <entry key="py" value="2834" />
+          <entry key="py" value="3344" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="117" />
-          <entry key="Python" value="2834" />
+          <entry key="Python" value="3344" />
         </counts>
       </usages-collector>
     </session>
@@ -107,8 +102,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
+            <state relative-caret-position="253">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -165,9 +160,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="91" />
-    <option name="width" value="1836" />
-    <option name="height" value="1057" />
+    <option name="x" value="90" />
+    <option name="width" value="1837" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -417,11 +412,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info x="235" y="30" width="868" height="917" id="Debug" order="2" weight="0.3858407" />
-      <window_info id="Run" order="3" weight="0.4117994" />
+      <window_info id="Run" order="3" visible="true" weight="0.4117994" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="1" weight="0.32961586" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.18215613" />
@@ -434,7 +430,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.1380531" />
+      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.139823" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -475,8 +471,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py</url>
-          <line>156</line>
+          <line>161</line>
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -579,19 +580,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/interim/1_Trade_Cube_1.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="39" column="70" selection-start-line="7" selection-start-column="2" selection-end-line="39" selection-end-column="70" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/interim/2_Resalt_Trade_Model_1_Ri_Archive_M.txt" />
     <entry file="file://$PROJECT_DIR$/data/interim/3_Train_Massiv_1.txt">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="LargeFileEditor">
         <state relative-caret-position="-118061" />
       </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_data/data_export_finam.py" />
     <entry file="file://$PROJECT_DIR$/src/1_data/trading_model_report.py" />
@@ -634,9 +635,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/processed/1_Train_Features_Massiv_1.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/processed/1_Train_Features_Massiv_1.txt" />
     <entry file="file://$PROJECT_DIR$/data/raw/VIX/Reestr">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -696,9 +695,7 @@
     <entry file="file://$PROJECT_DIR$/data/interim/2_Resalt_Trade_Model_1.txt">
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/interim/6_DataSet_fot_ML.txt">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/interim/6_DataSet_fot_ML.txt" />
     <entry file="file://$PROJECT_DIR$/src/1_data/data_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1136">
@@ -731,17 +728,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/3_models/LR_archive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="62" selection-start-line="57" selection-start-column="4" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/3_models/LR_archive.py" />
     <entry file="file://$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
+        <state relative-caret-position="253">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
