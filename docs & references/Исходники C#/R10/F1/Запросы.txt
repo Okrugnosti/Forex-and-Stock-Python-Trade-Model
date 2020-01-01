@@ -1,0 +1,2 @@
+SELECT Nomer, Data, Vrema, Bymaga, Cena FROM RIU1 WHERE Vrema = 10:00:01
+SELECT Nomer, Data, Vrema, Bymaga, Cena FROM RIU1 WHERE Index = 8111309"

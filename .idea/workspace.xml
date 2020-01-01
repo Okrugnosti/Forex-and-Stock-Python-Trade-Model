@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb36334-287d-4212-af58-437efa43f676" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/2_features/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_data/1_make_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/1_make_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_data/2_trade_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/2_trade_system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/1_data/4_report_trading_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/1_data/4_report_trading_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/2_features/1_volatility_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/2_features/1_volatility_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/1_Features_3.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/1_Features_3_Load.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/processed/1_Features_3_Load.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/processed/1_Train_Features_Massiv_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/3_models/LR_archive.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,110 +65,53 @@
     <session id="899599883">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
+          <entry key="ODS" value="1" />
+          <entry key="Reestr" value="1" />
+          <entry key="py" value="23" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="7" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="158" />
+          <entry key="Reestr" value="68" />
+          <entry key="dummy" value="47" />
+          <entry key="py" value="2834" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="158" />
+          <entry key="PLAIN_TEXT" value="117" />
+          <entry key="Python" value="2834" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_data/1_make_dataset.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_data/2_trade_system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="363" lean-forward="true" selection-start-line="363" selection-end-line="363" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_data/4_report_trading_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <marker date="1577378312424" expanded="true" signature="1451:1452" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/1_data/data_preprocessing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="73" column="41" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/2_features/1_volatility_model.py">
+        <entry file="file://$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="663">
+              <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/2_features/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="48" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -207,19 +149,25 @@
         <option value="$PROJECT_DIR$/src/1_data/Модель прогноза цены.py" />
         <option value="$PROJECT_DIR$/src/1_data/data_export_finam.py" />
         <option value="$PROJECT_DIR$/src/1_data/data_preprocessing.py" />
-        <option value="$PROJECT_DIR$/src/2_features/test.py" />
         <option value="$PROJECT_DIR$/src/1_data/1_make_dataset.py" />
-        <option value="$PROJECT_DIR$/src/1_data/2_trade_system.py" />
         <option value="$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py" />
         <option value="$PROJECT_DIR$/src/1_data/4_report_trading_model.py" />
+        <option value="$PROJECT_DIR$/data/raw/VIX/Reestr" />
+        <option value="$PROJECT_DIR$/src/2_features/test.py" />
+        <option value="$PROJECT_DIR$/src/3_models/Модель прогноза цены.py" />
         <option value="$PROJECT_DIR$/src/2_features/1_volatility_model.py" />
+        <option value="$PROJECT_DIR$/src/1_data/2_trade_system.py" />
+        <option value="$PROJECT_DIR$/docs &amp; references/Индикаторы технического анализа.txt" />
+        <option value="$PROJECT_DIR$/src/3_models/LR_archive.py" />
+        <option value="$PROJECT_DIR$/docs &amp; references/references/Python Extension Packages.txt" />
+        <option value="$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="203" />
-    <option name="width" value="1724" />
-    <option name="height" value="1054" />
+    <option name="x" value="91" />
+    <option name="width" value="1836" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -244,7 +192,30 @@
               <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
               <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="external" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="interim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="processed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="reports" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="docs &amp; references" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
@@ -276,19 +247,24 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/GitHub/Saint_Perersburg_Trading_Model_a/src/2_features/1_volatility_model.py" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/GitHub/Forex-and-Stock-Python-Trade-Model/src/3_models/LR_archive.py" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Forex-and-Stock-Python-Trade-Model\data\reports" />
+      <recent name="D:\GitHub\Forex-and-Stock-Python-Trade-Model\data\external\SPFB.RTS" />
+      <recent name="D:\GitHub\Forex-and-Stock-Python-Trade-Model\data\raw\SPFB.RTS" />
+      <recent name="D:\GitHub\Forex-and-Stock-Python-Trade-Model\data\interim" />
+      <recent name="D:\GitHub\Saint_Perersburg_Trading_Model_a\data\interim" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Forex-and-Stock-Python-Trade-Model\data\reports" />
+      <recent name="D:\GitHub\Forex-and-Stock-Python-Trade-Model\docs &amp; references" />
+      <recent name="D:\GitHub\Forex-and-Stock-Python-Trade-Model\data" />
       <recent name="D:\GitHub\Saint_Perersburg_Trading_Model_a\src\3_models" />
       <recent name="D:\GitHub\Saint_Perersburg_Trading_Model_a\reports" />
-      <recent name="D:\GitHub\Saint_Perersburg_Trading_Model_a" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GitHub\Saint_Perersburg_Trading_Model_a\data\interim" />
-      <recent name="D:\GitHub\Saint_Perersburg_Trading_Model_a\data\external\SPFB.RTS" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -303,8 +279,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.1_make_dataset">
-    <configuration name="1_make_dataset" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.1_Model_Future_Price_Close">
+    <configuration name="1_Model_Future_Price_Close" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Saint_Perersburg_Trading_Model_a" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/3_models" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2_trade_system" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Saint_Perersburg_Trading_Model_a" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -316,28 +313,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_data/1_make_dataset.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="1_volatility_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Saint_Perersburg_Trading_Model_a" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_features" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_features/1_volatility_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_data/2_trade_system.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -376,7 +352,7 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/1_data" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/1_data/4_report_trading_model.py" />
@@ -388,7 +364,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LR_archive" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Saint_Perersburg_Trading_Model_a" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -396,11 +372,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/2_features" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/3_models" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/2_features/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/3_models/LR_archive.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -410,19 +386,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.4_report_trading_model" />
+      <item itemvalue="Python.2_trade_system" />
       <item itemvalue="Python.3_trading_model_retrospectiva" />
-      <item itemvalue="Python.1_volatility_model" />
-      <item itemvalue="Python.1_make_dataset" />
-      <item itemvalue="Python.test" />
+      <item itemvalue="Python.4_report_trading_model" />
+      <item itemvalue="Python.1_Model_Future_Price_Close" />
+      <item itemvalue="Python.LR_archive" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.1_make_dataset" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.1_volatility_model" />
+        <item itemvalue="Python.1_Model_Future_Price_Close" />
+        <item itemvalue="Python.LR_archive" />
         <item itemvalue="Python.4_report_trading_model" />
         <item itemvalue="Python.3_trading_model_retrospectiva" />
+        <item itemvalue="Python.2_trade_system" />
       </list>
     </recent_temporary>
   </component>
@@ -441,15 +417,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info x="235" y="30" width="868" height="917" id="Debug" order="2" weight="0.3858407" />
-      <window_info id="Run" order="3" visible="true" weight="0.20884956" />
+      <window_info id="Run" order="3" weight="0.4117994" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="1" weight="0.32961586" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.18272841" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.18215613" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
@@ -459,7 +434,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.21356933" />
+      <window_info anchor="right" content_ui="combo" id="Project" order="3" visible="true" weight="0.1380531" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -475,12 +450,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/1_data/2_trade_system.py</url>
-          <line>269</line>
+          <line>270</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/1_data/2_trade_system.py</url>
-          <line>178</line>
+          <line>179</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -497,6 +472,11 @@
           <url>file://$PROJECT_DIR$/src/1_data/4_report_trading_model.py</url>
           <line>88</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py</url>
+          <line>156</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -531,7 +511,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reports/report_trading_model.py" />
-    <entry file="file://$PROJECT_DIR$/references/Instructions.txt">
+    <entry file="file://$PROJECT_DIR$/docs &amp; references/references/Instructions.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
@@ -539,28 +519,21 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/interim/Resalt_Trade_Model_1.txt" />
-    <entry file="file://$PROJECT_DIR$/references/ODS">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/references/Plotly">
+    <entry file="file://$PROJECT_DIR$/docs &amp; references/references/Plotly">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/references/TensorFlow">
+    <entry file="file://$PROJECT_DIR$/docs &amp; references/references/TensorFlow">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/references/vizualization">
+    <entry file="file://$PROJECT_DIR$/docs &amp; references/references/vizualization">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
@@ -598,9 +571,6 @@
     <entry file="file://$PROJECT_DIR$/data/external/SPFB.RTS/SPFB.RTS_170101_170630.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/external/SPFB.RTS/SPFB.RTS_060101_060630.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lib/site-packages/pandas/core/indexing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18480">
@@ -616,25 +586,7 @@
       </provider>
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/external/SPFB.RTS/SPFB.RTS_190101_190630.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="88" selection-start-line="22" selection-start-column="88" selection-end-line="22" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/interim/2_Resalt_Trade_Model_1.txt">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="108" selection-start-line="14" selection-start-column="108" selection-end-line="14" selection-end-column="108" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-129757">
-          <caret line="1" column="10" selection-start-line="1" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/interim/2_Resalt_Trade_Model_1_Ri_Archive_M.txt" />
     <entry file="file://$PROJECT_DIR$/data/interim/3_Train_Massiv_1.txt">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="LargeFileEditor">
@@ -644,9 +596,6 @@
     <entry file="file://$PROJECT_DIR$/src/1_data/data_export_finam.py" />
     <entry file="file://$PROJECT_DIR$/src/1_data/trading_model_report.py" />
     <entry file="file://$PROJECT_DIR$/src/1_data/5_dash_reporting_trading_model.py" />
-    <entry file="file://$PROJECT_DIR$/src/3_models/Модель прогноза цены.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/envs/Saint_Perersburg_Trading_Model_a/Lib/site-packages/pandas/core/groupby/grouper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -668,27 +617,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/2_features/test.py">
+    <entry file="file://$PROJECT_DIR$/data/external/SPFB.RTS/SPFB.RTS_190101_190630.txt" />
+    <entry file="file://$PROJECT_DIR$/data/raw/SPFB.RTS/SPFB.RTS_190101_190616.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/external/SPFB.RTS/SPFB.RTS_060101_060630.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/external/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="48" />
+        <state relative-caret-position="480">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_data/data_preprocessing.py">
+    <entry file="file://$PROJECT_DIR$/data/processed/1_Train_Features_Massiv_1.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/raw/VIX/Reestr">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="73" column="41" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2_features/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/reports/2_Resalt_Trade_Model_Ri_850p_5min_Classic_Model_2006_2019.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="160">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/2_features/1_volatility_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs &amp; references/Индикаторы технического анализа.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="137" column="43" selection-start-line="137" selection-start-column="43" selection-end-line="137" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_data/1_make_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+        <state relative-caret-position="480">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs &amp; references/references/Python Extension Packages.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs &amp; references/references/ODS">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/interim/2_Resalt_Trade_Model_1.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/interim/6_DataSet_fot_ML.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/1_data/data_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1136">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -697,36 +711,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/1_data/2_trade_system.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="363" lean-forward="true" selection-start-line="363" selection-end-line="363" />
+        <state relative-caret-position="5760">
+          <caret line="364" selection-start-line="363" selection-end-line="364" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/1_data/3_trading_model_retrospectiva.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="35" column="25" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/1_data/4_report_trading_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="576">
+          <caret line="47" column="157" selection-start-line="47" selection-start-column="157" selection-end-line="47" selection-end-column="157" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
-            <marker date="1577378312424" expanded="true" signature="1451:1452" ph="..." />
+            <element signature="e#5974#10777#1" />
+            <marker date="1577435821365" expanded="true" signature="1451:1452" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/2_features/1_volatility_model.py">
+    <entry file="file://$PROJECT_DIR$/src/3_models/LR_archive.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="368">
+          <caret line="62" selection-start-line="57" selection-start-column="4" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/3_models/1_Model_Future_Price_Close.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="231" lean-forward="true" selection-start-line="231" selection-end-line="231" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>

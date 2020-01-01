@@ -10,8 +10,10 @@ import plotly # Построение графиков https://proglib.io/p/plotl
 import scipy  # Выполнениt научных и инженерных расчётов
 import mglearn
 from tqdm import tqdm
+import ta #https://github.com/bukosabino/ta
 
 import sklearn as sk  # Машинное обучение
+
 #модели линейных регрессий
 from sklearn.linear_model import LinearRegression
 from sklearn.linear_model import Ridge
@@ -22,107 +24,6 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
 from sklearn.utils import shuffle
 
-'''
-def create_volatility_model(trade_cube):
-    X, y = mglearn.datasets.load_extended_boston()
-
-    #загружем выборку и разбиваем не тестовую и боевыую
-    X_train, X_test, y_train, y_test = sk.model_selection.train_test_split(X, y, random_state=0)
-
-    #выводим распредлеение значений от признаков
-    plt.plot(X, y, 'o')
-    #plt.ylim(-3,3)
-    plt.xlabel('Признак')
-    plt.ylabel('Целевая переменная')
-    plt.show()
-
-    #проводим обучение
-    lr = LinearRegression().fit(X_train, y_train)
-    print('\n', 'LinearRegressi')
-    print("Правильность на обучающем наборе: {:.2f}".format(lr.score(X_train, y_train)))
-    print("Правильность на тестовом наборе: {:.2f}".format(lr.score(X_test, y_test)))
-
-    ridge = Ridge(alpha=1).fit(X_train, y_train) #L2 - регуляризация
-    print('\n', 'ridge')
-    print("Правильность на обучающем наборе: {:.2f}".format(ridge.score(X_train, y_train)))
-    print("Правильность на тестовом наборе: {:.2f}".format(ridge.score(X_test, y_test)))
-
-    lasso = Lasso(alpha=0.01, max_iter=100000).fit(X_train, y_train) #L1 - регуляризация
-    print('\n', 'lasso')
-    print("Правильность на обучающем наборе: {:.2f}".format(lasso.score(X_train, y_train)))
-    print("Правильность на контрольном наборе: {:.2f}".format(lasso.score(X_test, y_test)))
-    print("Количество использованных признаков: {}".format(np.sum(lasso.coef_ != 0)))
-
-    ElasticN = ElasticNet(alpha=0.01, random_state=0).fit(X_train, y_train) #L1 и L2 - регуляризация
-    print('\n', 'ElasticN')
-    print("Правильность на обучающем наборе: {:.2f}".format(ElasticN.score(X_train, y_train)))
-    print("Правильность на контрольном наборе: {:.2f}".format(ElasticN.score(X_test, y_test)))
-    print("Количество использованных признаков: {}".format(np.sum(ElasticN.coef_ != 0)))
-
-    #lr, ridge, lasso - возращает объект, который содержит coef
-    #сравнение коэффициентов для разных моделей
-    plt.plot(lr.coef_, 's', label="Линейная регрессия")
-    plt.plot(ridge.coef_, '^', label="Ридж, alpha=1")
-    plt.plot(lasso.coef_, 'v', label="Лассо alpha=0.01")
-    plt.plot(ElasticN.coef_, 'o', label="ElasticN alpha=0.01")
-    plt.legend(ncol=2, loc=(0, 1.05))
-    plt.ylim(-25, 25)
-    plt.xlabel("Индекс коэффициента")
-    plt.ylabel("Оценка коэффициента")
-    plt.show()
-
-
-    o = pd.DataFrame(np.random.rand(200,5)*10,
-    columns=['a', 'b', 'c', 'd', 'y'])
-
-    #№№№№№ эксперимент 2
-    o2 = pd.DataFrame({'a': np.random.rand(200),
-                       'b': range(200),
-                       'c': 3})
-    
-    print(o2)
-    o2['y'] = 0
-    
-    o2.y = o2.a * o2.b + o2.c
-    
-    #o2.plot()
-    #plt.show()
-    
-    X_train, X_test, y_train, y_test = sk.model_selection.train_test_split(o2[['a', 'b', 'c']], o2['y'], random_state=0)
-    
-    #plt.plot(X_train, y_train, 'o')
-    #plt.show()
-    
-    lr = Lasso().fit(X_train, y_train)
-    print('\n', 'LinearRegressi')
-    print("Правильность на обучающем наборе: {:.2f}".format(lr.score(X_train, y_train)))
-    print("Правильность на тестовом наборе: {:.2f}".format(lr.score(X_test, y_test)))
-    
-    print(lr.coef_)
-    
-    
-    #plt.plot(lr.coef_, 's', label="Линейная регрессия")
-    #plt.show()
-    
-    #.score() принимает в качестве аргументов предсказатель x и регрессор y, и возвращает значение
-    #.intercept_это скаляр
-    #.coef_- массив весов
-    #.predict() - предсказание ответа
-    
-    y_pred = lr.predict(o2[['a', 'b', 'c']])
-    
-    print(y_pred)
-    
-    plt.plot(y_pred, 'o', label="Прогноз")
-    plt.plot(o2['y'], 'v', label="Факт")
-    plt.legend(ncol=2, loc=(0, 1.05))
-    plt.ylabel("Значение")
-    plt.xlabel("Итерация")
-    plt.show()
-
-
-    return trade_cube
-'''
 
 def features_crieted_price_series(trade_cube, colums_name ,time_convert, price_series):
 

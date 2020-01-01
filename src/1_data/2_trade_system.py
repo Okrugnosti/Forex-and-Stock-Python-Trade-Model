@@ -88,6 +88,7 @@ trade_cube['<Rezultat_Sdelki_Rub_Summ>'] = Rezultat_Sdelki_Rub_Summ
 # Начинаем моделирование торговых сигналов на исторических данных
 viborka = trade_cube['<CLOSE>'].count()
 
+
 for i in tqdm(range(0, viborka)):
 
     PriceClose = trade_cube['<CLOSE>'].iloc[i]
@@ -360,7 +361,7 @@ for i in tqdm(range(0, viborka)):
 
 # запись результатов в файл
 data_preprocessing.data_frame_write(trade_cube, 'D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/2_Resalt_Trade_Model_1.txt')
-trade_cube.to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/2_Resalt_Trade_Model_1.xlsx', startrow=3, index=True)
+#trade_cube.to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/2_Resalt_Trade_Model_1.xlsx', startrow=3, index=True)
 
 
 print(trade_cube.info())
