@@ -98,7 +98,6 @@ Dammi_P_MV_90vs200_IF_Fitch = Dammi_P_MV_5vs15_IF_Fitch[['Buy', 'Sell']]
 
 #4. Формируем консолидированную выборку для ML
 
-
 frame = [dataset,
           Dammi_Minutes_Fitch, Dammi_Hours_Fitch,
           Dammi_Day_Fitch, Dammi_Month_Fitch, Dammi_Qvartal_Fitch,
@@ -114,8 +113,7 @@ frame = [dataset,
           Dammi_P_MV_30vs60_IF_Fitch, Dammi_P_MV_30vs90_IF_Fitch,
           Dammi_P_MV_30vs200_IF_Fitch, Dammi_P_MV_60vs90_IF_Fitch,
           Dammi_P_MV_60vs200_IF_Fitch, Dammi_P_MV_90vs200_IF_Fitch
- 
-          ]
+        ]
 
 
 dataset2 = pd.concat(frame, axis=1, sort=False)
@@ -138,7 +136,7 @@ columns = ['Признак минуты', 'Признак часа', 'Призн
             ]
 
 dataset3 = dataset2.drop(columns, 1)
-print('dataset3: \n', dataset3.columns)
+#print('dataset3: \n', dataset3.iloc[:, 0:5].columns.names)
 
 #6. Разделяем файл на "Х-фичи" и "Y-прогноз", путем выбора столбцов
 
@@ -147,14 +145,69 @@ k = 63
 
 Y = dataset3['<CLOSE>.1']
 X = dataset3.drop('<CLOSE>.1', 1)
-X = dataset3.iloc[:, s:k]
+
+print(X.iloc[:, 0:50].columns)
+print(X.iloc[:, 50:100].columns)
+print(X.iloc[:, 100:159].columns)
+
+X = X.iloc[:, s:k]
 
 #обрезаем выборку
 #Y = Y.iloc[50000:171155]
 #X = X.iloc[50000:171155]
 
-#print('Выборка Х:\n ', X)
+#print('Выборка Х.name:\n ', X.info())
 #print('Выборка Y:\n ', Y)
+
+'''
+       #общее кол-во столбцов 159
+        
+       '<OPEN>', '<HIGH>', '<LOW>', '<CLOSE>', 'Delta_Price_ 1 Day Last',
+       'Delta_Price_ 5 Day Last', 'Delta_Price_15 Day Last',
+       'Delta_Price_30 Day Last', 'Delta_Price_60 Day Last',
+       'Delta_Price_90 Day Last', 'Delta_Price_200 Day Last',
+       'Price_ 1 Day Last', 'Price_ 5 Day Last', 'Price_15 Day Last',
+       'Price_30 Day Last', 'Price_60 Day Last', 'Price_90 Day Last',
+       'Price_200 Day Last', 'Price_Max 200 Day', 'Price_Min 200 Day',
+       'Price_Delta Min - Max 200 Day', 'Price_Distancia_Min - Max 200 Day',
+       '<VOL>', 'VOL-Summ-30', 'VOL_Max 200 Day', 'VOL_Min 200 Day',
+       'VOL_Delta Min - Max 200 Day', 'VOL_Distancia_Min - Max 200 Day',
+       'Price_Vol 5 Day', 'Price_Vol 15 Day', 'Price_Vol 30 Day',
+       'Price_Vol 60 Day', 'Price_Vol 90 Day', 'Price_Vol 200 Day',
+       'Price_Momentum 5 Day', 'Price_Momentum 15 Day',
+       'Price_Momentum 30 Day', 'Price_Momentum 60 Day',
+       'Price_Momentum 90 Day', 'Price_Momentum 200 Day',
+       'Price_Moving_Average 5 Day', 'Price_Moving_Average 15 Day',
+       'Price_Moving_Average 30 Day', 'Price_Moving_Average 60 Day',
+       'Price_Moving_Average 90 Day', 'Price_Moving_Average 200 Day',
+       'PX_OPEN', '<Rezultat_Sdelki_Cub>_Summ_60Day',
+       '<Rezultat_Sdelki_Cub>_Summ_90Day', '<Rezultat_Sdelki_Cub>_Summ_200Day',
+
+       'Raspredilenie_Sdelok -2', 'Raspredilenie_Sdelok -1', 'Raspredilenie_Sdelok 0',
+       'Raspredilenie_Sdelok +1', 'Raspredilenie_Sdelok +2',
+       'Raspredilenie_Sdelok +3', 'Raspredilenie_Sdelok +4',
+       'Raspredilenie_Sdelok +5 >', 'Raspredilenie_Sdelok +10 >',
+       'Raspredilenie_Sdelok +15 >', 'Raspredilenie_Sdelok +20 >',
+       'Nakoplennaya glubina prosadki_Cub', '<Rezultat_Sdelki_Retrospektiva>',
+       0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 10, 11, 12, 13, 14,
+       15, 16, 17, 18, 19, 20, 21, 22, 23, 
+       'воскресенье', 'вторник', 'понедельник', 'пятница',
+       'среда', 'суббота', 'четверг', 'Август', 'Апрель', 'Декабрь', 'Июль'],
+
+       'Июнь', 'Май', 'Март', 'Ноябрь', 'Октябрь', 'Сентябрь', 'Февраль',
+       'Январь', 'Q1', 'Q2', 'Q3', 'Q4', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy',
+       'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell',
+       'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy',
+       'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell',
+       'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy',
+       'Sell', 'Buy', 'Sell', 'Buy', 'Sell', 'Buy'
+'''
+
+#for col_name in range(63):
+#    print(col_name)
+
+print(X[0])
+
 
 #7. Разбиваем на тестовую и проверочную выборку
 
