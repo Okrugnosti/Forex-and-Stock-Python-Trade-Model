@@ -23,6 +23,11 @@ from sklearn.linear_model import ElasticNet
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import LinearSVC
 from sklearn.utils import shuffle
+from sklearn.externals import joblib
+
+# временная метка для отсечки скорости алгоритма
+t1 = datetime.now(tz=None)
+
 
 # ОБЩИЙ ПОРЯДОК ДЕЙСТВИЙ
 
@@ -208,10 +213,7 @@ print('Data Set с DammiPer - columns name (5/5): \n', dataset2.iloc[:, 200:250]
 
 # 6. Разделяем файл на "Х-фичи" и "Y-прогноз", путем выбора столбцов
 
-s = 0
-k = 50
-
-Y = dataset2['<CLOSE>_T+5M']
+Y = dataset2['<CLOSE>_T+2H']
 X = dataset2.drop([
     '<CLOSE>_T+5M',
     '<CLOSE>_T+10M',
@@ -223,7 +225,8 @@ X = dataset2.drop([
     '<CLOSE>_T+6H',
     '<CLOSE>_T+12H',
     '<CLOSE>_T+18H',
-    '<Rezultat_Sdelki_Retrospektiva>'], 1)
+    '<Rezultat_Sdelki_Retrospektiva>',
+    '<Rezultat_Sdelki_Retrospektiva_Class>'], 1)
 
 # X = X.iloc[:, s:k]
 X_train, X_test, Y_train, Y_test = sk.model_selection.train_test_split(X, Y, train_size=0.5, random_state=0)
@@ -240,7 +243,6 @@ plt.show()
 
 # 8. Запускаем ML-алгоритмы. Проводим обучение
 # Модель линейной регресси
-
 
 '''
 #Линейная регрессия
@@ -266,6 +268,11 @@ print("Правильность на контрольном наборе: {:.2f}
 print("Количество использованных признаков: {}".format(np.sum(ElasticN.coef_ != 0)))
 '''
 
+#выгрузка параметров модели в файл
+joblib.dump(lasso, 'D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/5_ML_Lasso_Price_T+2H.txt')
+#загрузка готовых параметров модели из файла
+#lasso = joblib.load('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/5_ML_Lasso_Price_T+5M.txt')
+
 # 8.1 Моделируем на несколько дней вперед
 ########################################
 
@@ -275,6 +282,7 @@ print("Количество использованных признаков: {}"
 # .coef_- массив весов
 # .predict() - предсказание ответа
 
+'''
 # График 2 - выделение значимых признаков
 fruits = X.columns
 counts = lasso.coef_
@@ -282,6 +290,7 @@ plt.plot(fruits, counts, '^', label="Значимость признаков в 
 plt.xticks(rotation=90)
 plt.legend()
 plt.show()
+'''
 
 print('lr.coef_- матрица значимых признаков и их параметров: \n', lasso.coef_)
 
@@ -292,11 +301,14 @@ dataset2['Delta%_X_Y'] = dataset2['Delta_X_Y'] / dataset2['<CLOSE>'] * 100
 
 print('Delta_X_Y: \n', dataset2['Delta_X_Y'])
 
+'''
 # График 3 - разница между фактом и прогнозом
 plt.plot(dataset2['Delta_X_Y'], 'o', label="Разница между фактом и прогнозом")
 plt.legend()
 plt.show()
+'''
 
+'''
 # График 4 - факт и прогноз цен
 plt.plot(dataset2[['<CLOSE>']], 'o', label="Факт")
 plt.plot(dataset2['Line_Regression_Predict'], 'v', label="Факт и прогноз цен")
@@ -304,11 +316,12 @@ plt.legend(ncol=2, loc=(0, 1.05))
 plt.ylabel("Значение")
 plt.xlabel("Итерация")
 plt.show()
+'''
 
 # 10. Выводим результаты модели в сводный файл. Объединяем результаты, сравниваем прогноз с фактом
-# dataset2.to_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/6_DataSet_fot_ML.txt', encoding='utf-8', sep=',')  # index=None,
-# dataset2.to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/6_DataSet_fot_ML.xlsx', startrow=3, index=True)
-(lasso.coef_).to_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/7_ML_lasso_coef.txt', startrow=3,
-                     index=True)
-
+# dataset2.to_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/6_Rezalt_ML_Ll_T+5M_01.csv', encoding='utf-8', sep=',')  # index=None,
+# dataset2.to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/6_Rezalt_ML_Ll_T+5M_01.xlsx', startrow=3, index=True)
 print("Write File - Ok")
+
+t2 = datetime.now(tz=None)
+print("Время работы алгоритма:", t2 - t1)
