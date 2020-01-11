@@ -68,14 +68,16 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ODS" value="1" />
-          <entry key="Reestr" value="1" />
+          <entry key="Reestr" value="2" />
+          <entry key="png" value="1" />
           <entry key="py" value="32" />
           <entry key="txt" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Image" value="1" />
+          <entry key="PLAIN_TEXT" value="16" />
           <entry key="Python" value="32" />
         </counts>
       </usages-collector>
@@ -113,12 +115,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/3_models/2_Model_Klassification_Signal_v01.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
+            <state relative-caret-position="1714">
               <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
                 <element signature="e#6069#10331#1" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/raw/VIX/Reestr">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -204,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="71" />
     <option name="y" value="29" />
     <option name="width" value="1776" />
@@ -252,6 +263,27 @@
               <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="raw" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="raw" type="462c0819:PsiDirectoryNode" />
+              <item name="C-bonds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="raw" type="462c0819:PsiDirectoryNode" />
+              <item name="Fitchi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Forex-and-Stock-Python-Trade-Model" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="raw" type="462c0819:PsiDirectoryNode" />
+              <item name="VIX" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Forex-and-Stock-Python-Trade-Model" type="b2602c69:ProjectViewProjectNode" />
@@ -458,7 +490,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
+    <frame x="-7" y="-7" width="1753" height="962" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -520,9 +552,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/external/SPFB.RTS/SPFB.RTS_140101_140630.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Lib/site-packages/pandas/io/parsers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -658,13 +687,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data/processed/1_Train_Features_Massiv_1.txt" />
-    <entry file="file://$PROJECT_DIR$/data/raw/VIX/Reestr">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/2_features/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -805,9 +827,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/reports/Значимость признаков в ML.Lasso.01.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/raw/VIX/Reestr">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/3_models/2_Model_Klassification_Signal_v01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="617">
+        <state relative-caret-position="1714">
           <caret line="316" lean-forward="true" selection-start-line="316" selection-end-line="316" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
