@@ -1,0 +1,12 @@
+pandas
+tqdm
+numpy
+matplotlib
+seaborn
+sklearn
+scipy
+pytz
+openpyxl
+plotly
+mglearn
+ta-lib

@@ -34,7 +34,7 @@ t1 = datetime.now(tz=None)
 # ОБЩИЙ ПОРЯДОК ДЕЙСТВИЙ
 
 # 1. Загружаем данные из CSV-файла
-dataset = pd.read_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/processed/1_Features_3_Load.05.csv', sep=';')
+dataset = pd.read_csv('../../data/processed/1_Features_3_Load.05.csv', sep=';')
 # dtype={'Pattern_Price_Delta_Price_200 Day Last': np.str,
 #       'Pattern_3M(Max)_Rezultat_Sdelki_Cub_Summ_60Day_Svertka': np.str,
 #       'Pattern_1M(Max)_Rezultat_Sdelki_Cub_Summ_60Day_Svertka': np.str})
@@ -265,9 +265,9 @@ print("Правильность на контрольном наборе: {:.2f}
 '''
 
 #выгрузка параметров модели в файл
-joblib.dump(lg, 'D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/5.1_ML_Lg_Binare_Class_Signal_01.txt')
+joblib.dump(lg, '../../data/interim/5.1_ML_Lg_Binare_Class_Signal_01.txt')
 #загрузка готовых параметров модели из файла
-#lg = joblib.load('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/5_ML_Lasso_Price_T+5M.txt')
+#lg = joblib.load('../../data/interim/5_ML_Lasso_Price_T+5M.txt')
 
 
 # 8.1 Моделируем на несколько дней вперед
@@ -311,8 +311,8 @@ plt.show()
 '''
 
 # 10. Выводим результаты модели в сводный файл. Объединяем результаты, сравниваем прогноз с фактом
-dataset2.to_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/6_Rezalt_ML_Lg_01.csv', encoding='utf-8', sep=',')  # index=None,
-# dataset2.to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/6_Rezalt_ML_Lg_01.xlsx', startrow=3, index=True)
+dataset2.to_csv('../../data/interim/6_Rezalt_ML_Lg_01.csv', encoding='utf-8', sep=',')  # index=None,
+# dataset2.to_excel('../../data/interim/6_Rezalt_ML_Lg_01.xlsx', startrow=3, index=True)
 print("Write File - Ok")
 
 t2 = datetime.now(tz=None)

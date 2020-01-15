@@ -1,0 +1,9 @@
+/venv/
+/.idea/
+/src/etc/
+/src/Scripts/
+/src/Lib/
+/src/share/
+/src/Include
+/src/pip-selfcheck.json
+/src/pyvenv.cfg

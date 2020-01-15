@@ -68,7 +68,7 @@ def features_crieted_price_series(trade_cube, colums_name ,time_convert, price_s
 
 
 #считываем данные из подготовленного файле, устанавливаем дату в качестве индекса
-trade_cube = pd.read_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/interim/3_Train_Massiv_1.txt', sep=',')
+trade_cube = pd.read_csv('../../data/interim/3_Train_Massiv_1.txt', sep=',')
 trade_cube['D'] = pd.to_datetime(trade_cube['D'], format='%Y-%m-%d %H:%M:%S')
 trade_cube = trade_cube.set_index('D')
 print(trade_cube.info())
@@ -92,10 +92,10 @@ trade_cube = pd.concat(frame, sort=True)
 
 #trade_cube = create_volatility_model(trade_cube)
 
-#trade_cube.to_csv('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/processed/1_Train_Features_Massiv_1.txt', encoding='utf-8', sep=',')  # index=None,
+#trade_cube.to_csv('../../data/processed/1_Train_Features_Massiv_1.txt', encoding='utf-8', sep=',')  # index=None,
 print('Txt file write')
 
-trade_cube.ix[0:10000].to_excel('D://GitHub/Forex-and-Stock-Python-Trade-Model/data/processed/1_Features_1.xlsx', startrow=3, index=True)
+trade_cube.ix[0:10000].to_excel('../../data/processed/1_Features_1.xlsx', startrow=3, index=True)
 print('Excel file write')
 
 
