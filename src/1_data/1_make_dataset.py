@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt  # Построение графиков
 import seaborn as sns  # Построение графиков
 import sklearn as sk  # Машинное обучение
 import scipy  # Выполнениt научных и инженерных расчётов
+import pickle
 
 #созданные мною библиотеки
 import data_preprocessing
@@ -49,6 +50,10 @@ trade_cube = trade_cube[['<OPEN>', '<HIGH>', '<LOW>', '<CLOSE>', '<VOL>', 'PX_OP
 
 # запись результатов в файл
 data_preprocessing.data_frame_write(trade_cube, '../../data/interim/1_Trade_Cube_1.txt') #'D://GitHub/Forex-and-Stock-Python-Trade-Models/data/interim/1_Trade_Cube_1.txt'
+
+# запись pandas DataFrame в pickle формате
+with open('../../data/interim/1_Trade_Cube_1.pickle', 'wb') as f:
+     pickle.dump(trade_cube, f)
 
 print(trade_cube.info())
 print(trade_cube)

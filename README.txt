@@ -46,3 +46,8 @@
 │       └── visualize.py
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.testrun.org
+
+
+Настройка окружения:
+1) pip install -r requirements.txt
+2) pip install -r requirements.txt --find-links=wheels --no-index

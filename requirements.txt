@@ -9,3 +9,4 @@ pytz
 openpyxl
 plotly
 mglearn
+ta-lib
