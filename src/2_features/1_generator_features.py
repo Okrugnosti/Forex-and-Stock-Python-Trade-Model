@@ -34,8 +34,6 @@ df_trade_cube['ema_period_1h'] = talib.EMA(close, timeperiod=60 / 5)
 df_trade_cube['ema_period_6h'] = talib.EMA(close, timeperiod=60 * 6 / 5)
 df_trade_cube['ema_period_12h'] = talib.EMA(close, timeperiod=60 * 12 / 5)
 
-
-
 # MACD
 macd, macdsignal, macdhist = talib.MACD(close, fastperiod=12, slowperiod=26, signalperiod=9)
 
@@ -43,5 +41,12 @@ df_trade_cube['macd_12_26_9'] = macd
 df_trade_cube['macdsignal_12_26_9'] = macdsignal
 df_trade_cube['macdhist_12_26_9'] = macdhist
 
+
+'''
+для тренировки модели, подготовить столбец со значениями:
+если результат сделки >0 then 'plus' else 'minus'
+'''
+
 with open('../../data/interim/5_Learning_set.pickle', 'wb') as f:
     pickle.dump(df_trade_cube, f)
+
