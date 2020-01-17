@@ -3,6 +3,7 @@ from tqdm import tqdm
 from datetime import datetime  # Класс по работе с датой
 import pandas as pd  # DataFrame
 import data_preprocessing
+import pickle
 
 '''
 Модуль 2. Торговый модуль. Моделируем торговые сигналы на исторической выборке
@@ -11,11 +12,13 @@ import data_preprocessing
 # временная метка для отсечки скорости алгоритма
 t1 = datetime.now(tz=None)
 
-
 #считываем данные из подготовленного файле, устанавливаем дату в качестве индекса
-trade_cube = pd.read_csv('../../data/interim/1_Trade_Cube_1.txt', sep=',')
-trade_cube['D'] = pd.to_datetime(trade_cube['D'], format='%Y-%m-%d %H:%M:%S')
-trade_cube = trade_cube.set_index('D')
+with open('../../data/interim/1_Trade_Cube_1.pickle', 'rb') as f:
+    trade_cube = pickle.load(f)
+
+#trade_cube = pd.read_csv('../../data/interim/1_Trade_Cube_1.txt', sep=',')
+#trade_cube['D'] = pd.to_datetime(trade_cube['D'], format='%Y-%m-%d %H:%M:%S')
+#trade_cube = trade_cube.set_index('D')
 
 # Инициализация переменных участвующих в торговой модели
 
@@ -360,7 +363,10 @@ for i in tqdm(range(0, viborka)):
     trade_cube['<Rezultat_Sdelki_Rub_Summ>'].iloc[i] = Rezultat_Sdelki_Rub_Summ
 
 # запись результатов в файл
-data_preprocessing.data_frame_write(trade_cube, '../../data/interim/2_Resalt_Trade_Model_1.txt')
+with open('../../data/interim/2_Resalt_Trade_Model_1.pickle', 'wb') as f:
+    pickle.dump(trade_cube, f)
+
+#data_preprocessing.data_frame_write(trade_cube, '../../data/interim/2_Resalt_Trade_Model_1.txt')
 #trade_cube.to_excel('../../data/interim/2_Resalt_Trade_Model_1.xlsx', startrow=3, index=True)
 
 

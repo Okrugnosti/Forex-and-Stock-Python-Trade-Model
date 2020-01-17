@@ -271,7 +271,7 @@ print("Количество использованных признаков: {}"
 #выгрузка параметров модели в файл
 joblib.dump(lasso, '../../data/interim/5_ML_Lasso_Price_T+2H.txt')
 #загрузка готовых параметров модели из файла
-#lasso = joblib.load('../../data/interim/5_ML_Lasso_Price_T+5M.txt')
+#lasso = joblib.load('../../data/interim/66_ML_Lasso_Price_T+5M.txt')
 
 # 8.1 Моделируем на несколько дней вперед
 ########################################

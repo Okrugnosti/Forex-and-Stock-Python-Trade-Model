@@ -265,9 +265,9 @@ print("Правильность на контрольном наборе: {:.2f}
 '''
 
 #выгрузка параметров модели в файл
-joblib.dump(lg, '../../data/interim/5.1_ML_Lg_Binare_Class_Signal_01.txt')
+joblib.dump(lg, '../../data/interim/66.1_ML_Lg_Binare_Class_Signal_01.txt')
 #загрузка готовых параметров модели из файла
-#lg = joblib.load('../../data/interim/5_ML_Lasso_Price_T+5M.txt')
+#lg = joblib.load('../../data/interim/6_ML_Lasso_Price_T+5M.txt')
 
 
 # 8.1 Моделируем на несколько дней вперед
@@ -311,8 +311,8 @@ plt.show()
 '''
 
 # 10. Выводим результаты модели в сводный файл. Объединяем результаты, сравниваем прогноз с фактом
-dataset2.to_csv('../../data/interim/6_Rezalt_ML_Lg_01.csv', encoding='utf-8', sep=',')  # index=None,
-# dataset2.to_excel('../../data/interim/6_Rezalt_ML_Lg_01.xlsx', startrow=3, index=True)
+dataset2.to_csv('../../data/interim/7_Rezalt_ML_Lg_01.csv', encoding='utf-8', sep=',')  # index=None,
+# dataset2.to_excel('../../data/interim/7_Rezalt_ML_Lg_01.xlsx', startrow=3, index=True)
 print("Write File - Ok")
 
 t2 = datetime.now(tz=None)

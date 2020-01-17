@@ -48,15 +48,16 @@ trade_cube = pd.concat(frame, sort=True)
 trade_cube['PX_OPEN'] = trade_cube['PX_OPEN'].sort_index().fillna(method='ffill')
 trade_cube = trade_cube[['<OPEN>', '<HIGH>', '<LOW>', '<CLOSE>', '<VOL>', 'PX_OPEN']].sort_index().dropna()
 
-# запись результатов в файл
-data_preprocessing.data_frame_write(trade_cube, '../../data/interim/1_Trade_Cube_1.txt') #'D://GitHub/Forex-and-Stock-Python-Trade-Models/data/interim/1_Trade_Cube_1.txt'
-
-# запись pandas DataFrame в pickle формате
+# запись результатов из pandas DataFrame в pickle формат и в файл
 with open('../../data/interim/1_Trade_Cube_1.pickle', 'wb') as f:
      pickle.dump(trade_cube, f)
+
+#data_preprocessing.data_frame_write(trade_cube, '../../data/interim/1_Trade_Cube_1.txt') #'D://GitHub/Forex-and-Stock-Python-Trade-Models/data/interim/1_Trade_Cube_1.txt'
+
 
 print(trade_cube.info())
 print(trade_cube)
 
 t2 = datetime.now(tz=None)
+print('File Write Ok')
 print(t2 - t1)

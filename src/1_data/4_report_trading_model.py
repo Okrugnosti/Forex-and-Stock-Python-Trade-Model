@@ -10,6 +10,7 @@ import seaborn as sns  # Построение графиков
 import sklearn as sk  # Машинное обучение
 import scipy  # Выполнениt научных и инженерных расчётов
 import data_preprocessing
+import pickle
 
 def raschet_Max_Drogdawn(x, Max_Risc):
     Local_Profit = Max_Drogdawn = Local_Drogdawn = Max_Drogdawn = Max_Profit = 0
@@ -39,9 +40,16 @@ def raschet_Max_Drogdawn(x, Max_Risc):
 
 def report_trade_model(period_agrigacii, Max_Risc):
     #считываем данные из подготовленного файле, устанавливаем дату в качестве индекса
+
+    with open('../../data/interim/2_Resalt_Trade_Model_1.pickle', 'rb') as f:
+        trade_cube = pickle.load(f)
+
+    '''
     trade_cube = pd.read_csv('../../data/interim/2_Resalt_Trade_Model_1.txt', sep=',')
     trade_cube['D'] = pd.to_datetime(trade_cube['D'], format='%Y-%m-%d %H:%M:%S')
     trade_cube = trade_cube.set_index('D')
+    '''
+
     print(trade_cube.info())
 
         #отбор транзакций с результатами сделок
