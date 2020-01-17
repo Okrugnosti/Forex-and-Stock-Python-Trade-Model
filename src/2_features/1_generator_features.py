@@ -1,7 +1,7 @@
 import talib
 import pickle
 
-with open('../../data/interim/1_trade_cube_1.pickle', 'rb') as f:
+with open('../../data/interim/3_Train_Massiv_2.pickle', 'rb') as f:
     df_trade_cube = pickle.load(f)
 
 close = df_trade_cube['<CLOSE>']

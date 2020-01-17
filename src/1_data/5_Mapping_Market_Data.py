@@ -11,9 +11,12 @@ from datetime import datetime
 на выходе файл "3_Train_Massiv_2" который используется в скриптах для генерации обучающей выборки
 '''
 
-trade_cube = pd.read_csv('../../data/interim/2_Resalt_Trade_Model_1.txt', sep=',')
-trade_cube = trade_cube.set_index('D')
+
+with open('../../data/interim/3_Train_Massiv_1.pickle', 'rb') as f:
+    trade_cube = pickle.load(f)
 
 
-with open('../../data/interim/2_Resalt_Trade_Model_1.pickle', 'wb') as f:
+with open('../../data/interim/3_Train_Massiv_2.pickle', 'wb') as f:
     pickle.dump(trade_cube, f)
+
+print('File Write')
