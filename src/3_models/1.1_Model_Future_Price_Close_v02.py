@@ -268,6 +268,19 @@ print("Правильность на контрольном наборе: {:.2f}
 print("Количество использованных признаков: {}".format(np.sum(ElasticN.coef_ != 0)))
 '''
 
+#МЕТРИКИ (ЛОГ.РЕГРЕССИЯ)
+#scoring = 'accuracy' - точность
+#scoring = 'neg_log_loss' - логарифмическая потеря
+#scoring = 'roc_auc' - площадь под кривой ROC
+# - матрица путаницы
+#classification_report - классификационный отчет
+
+#МЕТРИКИ (ЛИНЕЙНАЯ РЕГРЕССИЯ)
+#scoring = 'neg_mean_absolute_error' - cредняя абсолютная ошибка
+#scoring = 'neg_mean_squared_error' - cредняя квадратическая ошибка (или MSE)
+#scoring = 'r2' - метрика R ^ 2 (или R Squared)
+
+
 #выгрузка параметров модели в файл
 joblib.dump(lasso, '../../data/interim/5_ML_Lasso_Price_T+2H.txt')
 #загрузка готовых параметров модели из файла

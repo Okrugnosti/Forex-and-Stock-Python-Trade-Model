@@ -256,6 +256,19 @@ print('\n', 'LogisticRegression')
 print("Правильность на обучающем наборе: {:.2f}".format(lg.score(X_train, Y_train)))
 print("Правильность на тестовом наборе: {:.2f}".format(lg.score(X_test, Y_test)))
 
+#МЕТРИКИ (ЛОГ.РЕГРЕССИЯ)
+#scoring = 'accuracy' - точность
+#scoring = 'neg_log_loss' - логарифмическая потеря
+#scoring = 'roc_auc' - площадь под кривой ROC
+# - матрица путаницы
+#classification_report - классификационный отчет
+
+#МЕТРИКИ (ЛИНЕЙНАЯ РЕГРЕССИЯ)
+#scoring = 'neg_mean_absolute_error' - cредняя абсолютная ошибка
+#scoring = 'neg_mean_squared_error' - cредняя квадратическая ошибка (или MSE)
+#scoring = 'r2' - метрика R ^ 2 (или R Squared)
+
+
 '''
 # L1 - регуляризация
 lg_SVC = LinearSVC.fit(X_train, Y_train)
