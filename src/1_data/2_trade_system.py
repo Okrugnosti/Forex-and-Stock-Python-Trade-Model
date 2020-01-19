@@ -91,7 +91,6 @@ trade_cube['<Rezultat_Sdelki_Rub_Summ>'] = Rezultat_Sdelki_Rub_Summ
 # Начинаем моделирование торговых сигналов на исторических данных
 viborka = trade_cube['<CLOSE>'].count()
 
-
 for i in tqdm(range(0, viborka)):
 
     PriceClose = trade_cube['<CLOSE>'].iloc[i]

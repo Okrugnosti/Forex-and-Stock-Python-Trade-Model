@@ -35,7 +35,7 @@ t1 = datetime.now(tz=None)
 
 # ОБЩИЙ ПОРЯДОК ДЕЙСТВИЙ
 
-# 1. Загружаем данные из файла
+#1. Загружаем данные из файла
 with open('../../data/interim/5_Learning_set.pickle', 'rb') as f:
     dataset = pickle.load(f)
 
@@ -137,7 +137,7 @@ print(Data_Analysis)
 
 #8. Экспорт данных в файл
 with open('../../data/interim/7_Analysis_of_simulation_results_01.pickle', 'wb') as f:
-    pickle.dump(dataset, f)
+    pickle.dump(Data_Analysis, f)
 
 Data_Analysis.to_csv('../../data/interim/7_Analysis_of_simulation_results_01.csv', encoding='utf-8', sep=',')  # index=None,
 #Data_Analysis.to_excel('../../data/interim/7_Analysis_of_simulation_results_01.xlsx', startrow=3, index=True)
