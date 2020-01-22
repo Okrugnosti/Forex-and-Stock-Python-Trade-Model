@@ -10,3 +10,4 @@ openpyxl
 plotly
 mglearn
 ta-lib
+backtesting
