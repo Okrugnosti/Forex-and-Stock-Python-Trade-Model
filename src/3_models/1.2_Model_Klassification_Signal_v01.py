@@ -10,7 +10,7 @@ import plotly  # Построение графиков https://proglib.io/p/plot
 import scipy  # Выполнениt научных и инженерных расчётов
 import mglearn
 from tqdm import tqdm
-import ta  # https://github.com/bukosabino/ta
+
 
 import sklearn as sk  # Машинное обучение
 
@@ -87,7 +87,7 @@ Dammi_Pattern_Rezultat_Sdelki_Cub_Summ_60Day_1Mmax_Svertka = pd.get_dummies(
 # Выделение паттернов (сутки+недельные) - эффект памяти
 
 ########################################################
-
+print()
 
 # 4. Формируем консолидированную выборку для ML
 drop_frame = [dataset,
@@ -103,8 +103,8 @@ drop_frame = [dataset,
               Dammi_P_MV_60vs90_Fitch, Dammi_P_MV_60vs200_Fitch, Dammi_P_MV_90vs200_Fitch,
 
               Dammi_Pattern_Price_Delta_Price_200_Day_Last,
-              Dammi_Pattern_Rezultat_Sdelki_Cub_Summ_60Day_3Mmax_Svertka,
-              Dammi_Pattern_Rezultat_Sdelki_Cub_Summ_60Day_1Mmax_Svertka
+              Dammi_Pattern_Rezultat_Sdelki_Cub_Summ_60Day_3Mmax_Svertka
+              ,Dammi_Pattern_Rezultat_Sdelki_Cub_Summ_60Day_1Mmax_Svertka
               ]
 
 dataset2 = pd.concat(drop_frame, axis=1, sort=False)
@@ -128,8 +128,8 @@ columns = [
     'P_MV_60vs200 (IF)', 'P_MV_90vs200 (IF)', '<Rezultat_Sdelki_Cub>',
 
     'Pattern_Price_Delta_Price_200_Day_Last',
-    'Pattern_Rezultat_Sdelki_Cub_Summ_60Day_3Mmax_Svertka',
-    'Pattern_Rezultat_Sdelki_Cub_Summ_60Day_1Mmax_Svertka'
+    'Pattern_Rezultat_Sdelki_Cub_Summ_60Day_3Mmax_Svertka'
+    ,'Pattern_Rezultat_Sdelki_Cub_Summ_60Day_1Mmax_Svertka'
 
 ]
 
