@@ -12,19 +12,6 @@ import mglearn
 from tqdm import tqdm
 import ta #https://github.com/bukosabino/ta
 
-import sklearn as sk  # Машинное обучение
-
-#модели линейных регрессий
-from sklearn.linear_model import LinearRegression
-from sklearn.linear_model import Ridge
-from sklearn.linear_model import Lasso
-#линейные модели классификации
-from sklearn.linear_model import ElasticNet
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import LinearSVC
-from sklearn.utils import shuffle
-
-
 def features_crieted_price_series(trade_cube, colums_name ,time_convert, price_series):
 
     convert_market_data = trade_cube.resample(time_convert) \

@@ -1,0 +1,19 @@
+import pandas as pd #работа с таблицами
+
+csvkit - работа с CSV файлами
+
+
+import os  # Системные функции
+from datetime import datetime  # Класс по работе с датой
+import pytz  # База часовых поясов
+import openpyxl as xl  # Excel
+import numpy as np  # Матрицы
+import pandas as pd  # DataFrame
+import matplotlib.pyplot as plt  # Построение графиков
+import seaborn as sns  # Построение графиков
+import plotly # Построение графиков https://proglib.io/p/plotly/
+import scipy  # Выполнениt научных и инженерных расчётов
+import mglearn
+from tqdm import tqdm #Расчет прогресс бара
+import talib #Библиотека технического анализа
+import pickle #Формат для хрения файлов

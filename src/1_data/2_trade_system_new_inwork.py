@@ -64,9 +64,9 @@ class SmaCross(Strategy):
 
 
 bt = Backtest(trade_cube, SmaCross,
-              cash=120000, commission=0, margin=1, trade_on_close=True)
+              cash=100000, commission=0, margin=1, trade_on_close=True)
 output = bt.run()
 
 # вывод графиков
-# bt.plot()
+bt.plot()
 print(output)
