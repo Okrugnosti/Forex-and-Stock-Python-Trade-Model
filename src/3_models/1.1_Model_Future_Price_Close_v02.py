@@ -10,7 +10,7 @@ import plotly  # Построение графиков https://proglib.io/p/plot
 import scipy  # Выполнениt научных и инженерных расчётов
 import mglearn
 from tqdm import tqdm
-import ta  # https://github.com/bukosabino/ta
+#import ta  # https://github.com/bukosabino/ta
 
 import sklearn as sk  # Машинное обучение
 
@@ -213,7 +213,10 @@ print('Data Set с DammiPer - columns name (5/5): \n', dataset2.iloc[:, 200:250]
 
 # 6. Разделяем файл на "Х-фичи" и "Y-прогноз", путем выбора столбцов
 
-Y = dataset2['<CLOSE>_T+2H']
+dataset2['Delta_T+5M'] = dataset2['<CLOSE>_T+5M'] - dataset2['<CLOSE>']
+
+
+Y = dataset2['Delta_T+5M']
 X = dataset2.drop([
     '<CLOSE>_T+5M',
     '<CLOSE>_T+10M',
@@ -332,7 +335,7 @@ plt.show()
 '''
 
 # 10. Выводим результаты модели в сводный файл. Объединяем результаты, сравниваем прогноз с фактом
-# dataset2.to_csv('../../data/interim/6_Rezalt_ML_Ll_T+5M_01.csv', encoding='utf-8', sep=',')  # index=None,
+dataset2.to_csv('../../data/interim/6_Rezalt_ML_Ll_T+5M_01.csv', encoding='utf-8', sep=',')  # index=None,
 # dataset2.to_excel('../../data/interim/6_Rezalt_ML_Ll_T+5M_01.xlsx', startrow=3, index=True)
 print("Write File - Ok")
 

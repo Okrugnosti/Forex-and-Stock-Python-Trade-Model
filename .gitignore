@@ -26,3 +26,5 @@ data/interim/7_Rezalt_ML_Lg_01.csv
 data/processed/1_Features_3_Load.04.csv
 data/processed/1_Features_3_Load.06.csv
 data/reports/2_Resalt_Trade_Model_Ri_850p_5min_Classic_Model_2006_2019.xlsx
+data/reports/Corr_Hour_Hour_01.xlsx
+data/interim/6_Rezalt_ML_Ll_T+5M_01.csv
