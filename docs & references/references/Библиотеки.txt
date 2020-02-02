@@ -17,3 +17,18 @@ import mglearn
 from tqdm import tqdm #Расчет прогресс бара
 import talib #Библиотека технического анализа
 import pickle #Формат для хрения файлов
+
+
+https://github.com/MaxBenChrist/awesome_time_series_in_python - библиотека библиотек для времянных рядов
+
+https://tsfresh.readthedocs.io/en/latest/authors.html - генератор признаков
+https://github.com/FeatureLabs/featuretools - An open source python library for automated feature engineering https://www.featuretools.com
+
+https://github.com/crsmithdev/arrow - Better dates & times for Python https://arrow.readthedocs.io
+https://github.com/cesium-ml/cesium - Machine Learning Time-Series Platform
+https://github.com/facebook/prophet - Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth. https://facebook.github.io/prophet
+https://github.com/johannfaouzi/pyts - A Python package for time series classification
+https://github.com/cauchyturing/UCR_Time_Series_Classification_Deep_Learning_Baseline - Fully Convlutional Neural Networks for state-of-the-art time series classification
+
+https://github.com/rapidsai/cudf - pandas в GPU
+

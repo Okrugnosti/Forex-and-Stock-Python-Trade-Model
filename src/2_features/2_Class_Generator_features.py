@@ -48,7 +48,6 @@ DataFrame_Raw_01.columns = ['Ri_5M_Price_Open', 'Ri_5M_Price_High', 'Ri_5M_Price
 DataFrame_Raw_01 = DataFrame_Raw_01.iloc[:, 0:-1].astype('int')
 print(DataFrame_Raw_01.info())
 
-
 # Выделение признаков времени
 DataFrame_Raw_01['data'] = DataFrame_Raw_01.index
 #DataFrame_Raw_02 = DataFrame_Raw_01['data'].apply(lambda x: pd.DataFrame({
@@ -130,7 +129,6 @@ plt.show()
 '''
 
 '''
-
 corr = DataFrame_Raw_01_Pivot_Price.corr()
 corr.to_excel('../../data/reports/Corr_Hour_Hour_01.xlsx', startrow=3, index=True)
 
